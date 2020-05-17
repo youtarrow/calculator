@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓アプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div id="calculator">
+           <div id="screen" class="flex flexEd alignEd"></div>
+           <ul class="flex flexWp">
+               <li>
+                   <input type="button" class="grayBtn" name="btn" value="AC" onclick="btn_clear()">
+               </li>
+               <li>
+                   <input type="button" class="grayBtn" name="btn" value="+/-" onclick="btn_operator('+/-')">
+               </li>
+               <li>
+                   <input type="button" class="grayBtn" name="btn" value="%" onclick="btn_operator('%')">
+               </li>
+               <li>
+                   <input type="button" class="yellowBtn" name="btn" value="÷" onclick="btn_operator('/')">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="7" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="8" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="9" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" class="yellowBtn" name="btn" value="×" onclick="btn_operator('*')">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="4" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="5" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="6" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" class="yellowBtn" name="btn" value="-" onclick="btn_operator('-')">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="1" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="2" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="3" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" class="yellowBtn" name="btn" value="+" onclick="btn_operator('+')">
+               </li>
+               <li class="zero">
+                   <input type="button" name="btn" value="0" onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" name="btn" value="." onclick="btnNum(this)">
+               </li>
+               <li>
+                   <input type="button" class="yellowBtn" name="btn" value="=" onclick="btn_equal(this)">
+               </li>
+           </ul>
+        </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
